@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UrbanStore | Modern Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            Urban<span>Store</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" id="cartBtn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    NEW COLLECTION 2026
+                </p>
+
+                <h1>
+                    Find Your
+                    <span>Everyday Style</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover carefully selected pieces designed
+                    to make your everyday look simple, comfortable
+                    and timeless.
+                </p>
+
+                <button class="primary-btn" id="shopNowBtn">
+                    Shop Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="hero-image">
+
+    <img
+                src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b"
+                alt="fashion"
+            />                <div class="hero-badge">
+                    <strong>25%</strong>
+                    <span>OFF</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="categories section" id="categories">
+
+            <div class="section-heading">
+
+                <p>EXPLORE</p>
+
+                <h2>
+                    Shop By Category
+                </h2>
+
+                <span>
+                    Find something made for you
+                </span>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <button
+                    class="category-card"
+                    data-category="fashion"
+                >
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-shirt"></i>
+                    </div>
+
+                    <h3>Fashion</h3>
+
+                    <p>
+                        Everyday clothing
+                    </p>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="shoes"
+                >
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-shoe-prints"></i>
+                    </div>
+
+                    <h3>Shoes</h3>
+
+                    <p>
+                        Comfort & style
+                    </p>
+
+                </button>
+
+
+                <button
+                    class="category-card"
+                    data-category="accessories"
+                >
+
+                    <div class="category-icon">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+
+                    <h3>Accessories</h3>
+
+                    <p>
+                        Complete your look
+                    </p>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="products-section section" id="products">
+
+            <div class="section-heading">
+
+                <p>OUR COLLECTION</p>
+
+                <h2>
+                    Featured Products
+                </h2>
+
+                <span>
+                    Simple pieces. Better style.
+                </span>
+
+            </div>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a product..."
+                >
+
+            </div>
+
+
+
+            <div class="filters">
+
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="fashion"
+                >
+                    Fashion
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="shoes"
+                >
+                    Shoes
+                </button>
+
+                <button
+                    class="filter-btn"
+                    data-filter="accessories"
+                >
+                    Accessories
+                </button>
+
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+
+
+                <article
+                    class="product-card"
+                    data-category="fashion"
+                    data-name="Classic Cotton T-Shirt"
+                    data-price="29"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
+                            alt="Classic Cotton T-Shirt"
+                        >
+
+                        <span class="product-tag">
+                            NEW
+                        </span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Fashion
+                        </p>
+
+                        <h3>
+                            Classic Cotton T-Shirt
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $29
+                            </span>
+
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="product-card"
+                    data-category="shoes"
+                    data-name="Urban Sneakers"
+                    data-price="79"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80"
+                            alt="Urban Sneakers"
+                        >
+
+                        <span class="product-tag">
+                            SALE
+                        </span>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Shoes
+                        </p>
+
+                        <h3>
+                            Urban Sneakers
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $79
+                            </span>
+
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="product-card"
+                    data-category="accessories"
+                    data-name="Classic Watch"
+                    data-price="119"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80"
+                            alt="Classic Watch"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Accessories
+                        </p>
+
+                        <h3>
+                            Classic Watch
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $119
+                            </span>
+
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="product-card"
+                    data-category="fashion"
+                    data-name="Minimal Jacket"
+                    data-price="95"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80"
+                            alt="Minimal Jacket"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Fashion
+                        </p>
+
+                        <h3>
+                            Minimal Jacket
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $95
+                            </span>
+
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article
+                    class="product-card"
+                    data-category="shoes"
+                    data-name="Daily Sneakers"
+                    data-price="85"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80"
+                            alt="Daily Sneakers"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Shoes
+                        </p>
+
+                        <h3>
+                            Daily Sneakers
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $85
+                            </span>
+
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                    class="product-card"
+                    data-category="accessories"
+                    data-name="Leather Bag"
+                    data-price="110"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80"
+                            alt="Leather Bag"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <p class="product-category">
+                            Accessories
+                        </p>
+
+                        <h3>
+                            Leather Bag
+                        </h3>
+
+                        <div class="product-bottom">
+
+                            <span class="price">
+                                $110
+                            </span>
+
+                            <button class="add-btn">
+                                <i class="fa-solid fa-plus"></i>
+                                Add
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <p class="no-products" id="noProducts">
+                No products found.
+            </p>
+
+        </section>
+
+
+        <section class="contact section" id="contact">
+
+            <div class="contact-content">
+
+                <div class="section-heading">
+
+                    <p>GET IN TOUCH</p>
+
+                    <h2>
+                        We'd Love To Hear From You
+                    </h2>
+
+                    <span>
+                        Have a question about our products?
+                        Send us a message.
+                    </span>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                    <textarea
+                        id="message"
+                        placeholder="Your Message"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <div>
+                <p>Your Bag</p>
+                <h2>Shopping Cart</h2>
+            </div>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        ></div>
+
+
+        <div class="empty-cart" id="emptyCart">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <h3>
+                Your cart is empty
+            </h3>
+
+            <p>
+                Add something you love.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="total-row">
+
+                <span>
+                    Total
+                </span>
+
+                <strong>
+                    $<span id="cartTotal">0</span>
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <footer id="footer">
+
+        <div class="footer-content">
+
+            <a href="#home" class="logo">
+                Urban<span>Store</span>
+            </a>
+
+            <p>
+                Simple style. Better everyday.
+            </p>
+
+            <div class="socials">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 UrbanStore. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
